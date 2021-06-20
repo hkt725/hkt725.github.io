@@ -541,15 +541,20 @@
       transform: rotateY(180deg);
     }
     &:hover > .work--back {
-      transform: rotateY(180deg);
       display: block;
     }
     .work--back {
+      transform: rotateY(180deg);
+
       display: none;
       width: 20vw;
       height: 20vw;
       background-color: #fff;
       border: 0.3vw solid #000;
+
+      &:hover {
+        display: block;
+      }
       .work__para {
         margin: 1vw auto;
         width: 17vw;

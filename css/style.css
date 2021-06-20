@@ -662,17 +662,21 @@
 }
 
 .main .work:hover > .work--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   display: block;
 }
 
 .main .work .work--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   display: none;
   width: 20vw;
   height: 20vw;
   background-color: #fff;
   border: 0.3vw solid #000;
+}
+
+.main .work .work--back:hover {
+  display: block;
 }
 
 .main .work .work--back .work__para {
