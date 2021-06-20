@@ -285,7 +285,7 @@
                     if ($(event.target).hasClass("web-design")) {
                         $(event.target).addClass("active");
                         $(event.target).siblings(".work__nav__title").removeClass("active");
-                        $(event.target).parents(".work__nav").siblings(".work--web-design").toggleClass("active");
+                        $(event.target).parents(".work__nav").siblings(".work--web-design").addClass("active");
                         $(event.target).parents(".work__nav").siblings(".work--graphic-design,.work--illustation").removeClass("active");
 
 
@@ -293,14 +293,14 @@
                     if ($(event.target).hasClass("graphic-design")) {
                         $(event.target).addClass("active");
                         $(event.target).siblings(".work__nav__title").removeClass("active");
-                        $(event.target).parents(".work__nav").siblings(".work--graphic-design").toggleClass("active");
+                        $(event.target).parents(".work__nav").siblings(".work--graphic-design").addClass("active");
                         $(event.target).parents(".work__nav").siblings(".work--web-design,.work--illustation").removeClass("active");
 
                     }
                     if ($(event.target).hasClass("illustration")) {
                         $(event.target).addClass("active");
                         $(event.target).siblings(".work__nav__title").removeClass("active");
-                        $(event.target).parents(".work__nav").siblings(".work--illustation").toggleClass("active");
+                        $(event.target).parents(".work__nav").siblings(".work--illustation").addClass("active");
                         $(event.target).parents(".work__nav").siblings(".work--web-design,.work--graphic-design").removeClass("active");
                     }
                 });
