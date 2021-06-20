@@ -127,6 +127,15 @@
       align-self: center;
 }
 
+* .nav__item:hover {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+* .nav__item.active {
+  color: #8f7c6e;
+}
+
 * .nav__item--2 {
   -ms-grid-column-align: start;
       justify-self: start;
@@ -182,7 +191,7 @@
   height: 30vw;
   width: 25vw;
   border-radius: 50% / 50%;
-  background-image: url("/images/face/HKT.png");
+  background-image: url("../images/face/HKT.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,11 +200,11 @@
 }
 
 * .info__pic.active {
-  background-image: url("/images/face/non-face.png");
+  background-image: url("../images/face/non-face.png");
 }
 
 * .info__pic.active .click-me {
-  background-image: url("/images/move.png");
+  background-image: url("../images/move.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -210,7 +219,7 @@
 
 * .info__pic.active #draggable6 {
   cursor: move;
-  background-image: url("/images/face/eye--left.png");
+  background-image: url("../images/face/eye--left.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -224,7 +233,7 @@
 
 * .info__pic.active #draggable7 {
   cursor: move;
-  background-image: url("/images/face/eye--right.png");
+  background-image: url("../images/face/eye--right.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -238,7 +247,7 @@
 
 * .info__pic.active #draggable8 {
   cursor: move;
-  background-image: url("/images/face/nose.png");
+  background-image: url("../images/face/nose.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -252,7 +261,7 @@
 
 * .info__pic.active #draggable9 {
   cursor: move;
-  background-image: url("/images/face/mouth.png");
+  background-image: url("../images/face/mouth.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -265,7 +274,7 @@
 }
 
 * .info__pic .click-me {
-  background-image: url("/images/click.png");
+  background-image: url("../images/click.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -296,7 +305,7 @@
 
 * #draggable {
   cursor: move;
-  background-image: url("/images/pic1.png");
+  background-image: url("../images/pic1.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,7 +396,7 @@
 
 * #draggable1 {
   cursor: move;
-  background-image: url("/images/pic2.png");
+  background-image: url("../images/pic2.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -401,7 +410,7 @@
 
 * #draggable2 {
   cursor: move;
-  background-image: url("/images/pic3.png");
+  background-image: url("../images/pic3.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -416,7 +425,7 @@
 
 * #draggable3 {
   cursor: move;
-  background-image: url("/images/pic4.png");
+  background-image: url("../images/pic4.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -432,7 +441,7 @@
 
 * #draggable4 {
   cursor: move;
-  background-image: url("/images/pic5.png");
+  background-image: url("../images/pic5.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -448,7 +457,7 @@
 
 * #draggable5 {
   cursor: move;
-  background-image: url("/images/pic6.png");
+  background-image: url("../images/pic6.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -463,7 +472,7 @@
 }
 
 * .scroll {
-  background-image: url("/images/scroll.png");
+  background-image: url("../images/scroll.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -522,19 +531,19 @@
 }
 
 .main .owl-nav .owl-prev {
-  background-image: url("/images/prev.png") !important;
+  background-image: url("../images/prev.png") !important;
 }
 
 .main .owl-nav .owl-prev:hover {
-  background-image: url("/images/prev-1.png") !important;
+  background-image: url("../images/prev-1.png") !important;
 }
 
 .main .owl-nav .owl-next {
-  background-image: url("/images/next.png") !important;
+  background-image: url("../images/next.png") !important;
 }
 
 .main .owl-nav .owl-next:hover {
-  background-image: url("/images/next-2.png") !important;
+  background-image: url("../images/next-2.png") !important;
 }
 
 .main .owl-dots {
@@ -642,8 +651,9 @@
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 0 2vw;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .main .work:hover {
@@ -662,9 +672,7 @@
   width: 20vw;
   height: 20vw;
   background-color: #fff;
-  border: 0.4vw solid #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  border: 0.3vw solid #000;
 }
 
 .main .work .work--back .work__para {
@@ -682,6 +690,13 @@
   margin-top: 1vw;
   font-size: 1vw;
   line-height: 2vw;
+  letter-spacing: 0.1vw;
+}
+
+.main .work .work--back .work__para span {
+  margin-top: 1vw;
+  font-size: 0.8vw;
+  line-height: 1vw;
   letter-spacing: 0.1vw;
 }
 
