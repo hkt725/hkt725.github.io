@@ -125,6 +125,8 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 * .nav__item:hover {
@@ -736,8 +738,8 @@ footer {
 footer .contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7fr 2.5fr 2.5fr;
-      grid-template-columns: 7fr 2.5fr 2.5fr;
+  -ms-grid-columns: 5fr 2fr 2.5fr 2.5fr;
+      grid-template-columns: 5fr 2fr 2.5fr 2.5fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   width: 100%;
